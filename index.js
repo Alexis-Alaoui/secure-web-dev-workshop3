@@ -9,3 +9,7 @@ app.use(locationController)
 app.listen(port, () => {
 	console.log(`API listening on port ${port}, visit http://localhost:${port}/`)
 })
+
+app.get('/HelloWord', (req, res) => {
+	return res.status(200).send("HelloWord")
+})
