@@ -15,7 +15,7 @@ router.post('/locations', async(req,res) => {
 	return res.status(200).send({locations: await locationsService.create(req.body)})
 
 })
-router.put('/parkings/:id', async(req,res) => {
+router.put('/locations/:id', async(req,res) => {
 	return res.status(200).send({locations: await locationsService.update(req.params.id,req.body)})
 
 })
